@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 export default function Form() {
     //const [formData, setFormData] = useState({});
@@ -36,6 +36,10 @@ export default function Form() {
         //console.log({ title, description });
         //console.log(formData)
     };
+
+    useEffect(() => {
+        console.log("Title berubah:", title);
+      }, [title]);
 
     return (
         <>
